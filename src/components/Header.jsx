@@ -5,7 +5,8 @@ import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
 import menu from '@icons/icon_menu.svg';
-import logo from '@logos/logo_yard_sale.svg';
+//import logo from '@logos/logo_yard_sale.svg';
+import logo from '@logos/log.png';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 const Header = () => {
@@ -22,23 +23,25 @@ const Header = () => {
         <nav>
             <img src={menu} alt="menu" className="menu" />
             <div className="navbar-left">
-                <img src={logo} alt="logo" className="nav-logo" />
+                <img src={logo} alt="logo" className="nav-logo" style={{height:"60px",width : "auto"}}/>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/login">login</Link></li>
-                    <li><Link to="/password-recovery">password-recovery</Link></li>
+                    {/* <li><Link to="/password-recovery">password-recovery</Link></li> */}
                     <li><Link to="/send-email">send-email</Link></li>
-                    <li><Link to="/new-password">new-password</Link></li>
+                    {/* <li><Link to="/new-password">new-password</Link></li> */}
                     <li><Link to="/account" >account</Link></li>
-                    <li><Link to="/signup" >signup</Link></li>
-                    <li><Link to="/checkout" >checkout</Link></li>
-                    <li><Link to="/orders" >orders</Link></li>
+                    {/* <li><Link to="/signup" >signup</Link></li> */}
+                    {/* <li><Link to="/checkout" >checkout</Link></li>
+                    <li><Link to="/orders" >orders</Link></li> */}
                 </ul>
             </div>
             <div className="navbar-right">
                 <ul>
-                    <li className="navbar-email" onClick={handleToggle}>
-                        platzi@example.com
+                    <li className="navbar-email">
+                        <a href="https://r32mcastillo.github.io/">
+                            https://r32mcastillo.github.io/
+                        </a>
                     </li>
                     <li className="navbar-shopping-cart" 
                         onClick={() => setToggleOrders(!toggleOrders)}>
