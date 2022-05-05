@@ -28,10 +28,11 @@ const App = () => {
           </Switch>
         </Layout>
     </BrowserRouter>
+      <BrowserRouter  basename='/reactpractico'>
    */
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter>
+      <BrowserRouter basename='/reactpractico'>
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />
