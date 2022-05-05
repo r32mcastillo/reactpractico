@@ -14,6 +14,22 @@ npm run start
 npm run deploy
 ```
 
+**Para poder verlo en localhost , se tiene que modificar el archivo `src\routes\App.jsx`.**
+```
+// Para localhost
+return (
+    <AppContext.Provider value={initialState}>
+      <BrowserRouter>
+    ...
+)
+// Para github page
+return (
+    <AppContext.Provider value={initialState}>
+      <BrowserRouter basename='/reactpractico'>
+    ...
+)
+```
+
 **Recursos.**
 - [https://platzi.com/cursos/react-practico/](https://platzi.com/cursos/react-practico/)
 - [https://api.escuelajs.co/](https://api.escuelajs.co/docs/#/products/ProductsController_getAll)
