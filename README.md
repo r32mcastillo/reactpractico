@@ -7,11 +7,12 @@
 - node v16.14.2
 - npm 8.5.0
 
-**Comandos para realizar la instalación , ejecución y lanzamiento al servidor.**
+**Comandos para realizar la instalación y ejecución.**
 ```
+git clone https://github.com/r32mcastillo/reactpractico.git
+cd reactpractico
 npm install
 npm run start
-npm run deploy
 ```
 
 **Para poder verlo en localhost , se tiene que modificar el archivo `src\routes\App.jsx`.**
@@ -28,6 +29,15 @@ return (
       <BrowserRouter basename='/reactpractico'>
     ...
 )
+```
+
+**Comandos para realizar lanzamiento al servidor de github pages.**
+```
+// Se instalo 
+npm install gh-pages --save-dev
+
+//Ejecutar
+npm run deploy
 ```
 
 **Recursos.**
