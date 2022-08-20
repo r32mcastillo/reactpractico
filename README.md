@@ -1,12 +1,23 @@
-# React 
+<div align="center">
+
+  <img src="src/assets/logos/log-2.png" alt="logo" width="200" height="auto" />
+</div>
+
+
+<!-- About the Project -->
+## :star2: Practica en React
 
 **Puedes ver el resultado en:** [https://r32mcastillo.github.io/reactpractico/](https://r32mcastillo.github.io/reactpractico/).
 
 
+<!-- Prerequisites -->
+### :bangbang: Prerrequisitos
 **Ambiente de desarrollo.**
 - node v16.14.2
 - npm 8.5.0
 
+<!-- Installation -->
+### :gear: Instalación
 **Comandos para realizar la instalación y ejecución.**
 ```
 git clone https://github.com/r32mcastillo/reactpractico.git
@@ -15,6 +26,9 @@ npm install
 npm run start
 ```
 
+
+<!-- Run Locally -->
+### :running: Ejecución
 **Para poder verlo en localhost , se tiene que modificar el archivo `src\routes\App.jsx`.**
 ```
 // Para localhost
