@@ -1,6 +1,6 @@
-<div align="center">
+<div align="right">
 
-  <img src="src/assets/logos/log-2.png" alt="logo" width="200" height="auto" />
+  <img src="src/assets/logos/log-2.png" alt="logo" width="50" height="auto" />
 </div>
 
 
